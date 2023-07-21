@@ -62,7 +62,7 @@ getData(bla)*/
             login: headers
         };
 
-        const response = await fetch('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', options);
+        const response = await fetch('user-token', options);
         
         if (response.headers.has('login')) {
             const login = response.headers.get('login');
