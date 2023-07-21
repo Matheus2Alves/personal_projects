@@ -83,7 +83,7 @@ getData(bla)*/
 
 myData();*/
 
-const accessToken = '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'
+const accessToken = 'user-token'
 
 async function getData() {
     try{
