@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="../estilos/movie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="search">
+            <h1>Popular Movies</h1>
+            <label for="movieSearch" class="search-container">
+                <input type="search" name="movieSearch" id="movieSearch" placeholder="type some movie to search">
+                <img src="../imagens/search-icon.svg" alt="search" id="search-icon">
+            </label>
+            <div class="checkbox-container">
+                <input type="checkbox" name="favMovies" id="favMovies">
+                <label for="favMovies">Just show your favorite movies</label>
+            </div>      
+        </section>
+        <section class="movies-container">
+            <article class="movies">
+                <div class="moviePoster">
+                    <img src="../imagens/endgaeme.svg" alt="movie poster">
+                </div>
+                <div class="infoMovie">
+                    <h2>Avengers EndGame</h2>
+                    <div class="infostats">
+                        <p id="note"><img src="../imagens/star.svg" alt="rating" class="iconStats"> 10.0</p>
+                        <p><img src="../imagens/favnull.svg" alt="favs" class="iconStats"> favoritar </p>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio laborum sed veniam officia itaque suscipit deleniti optio inventore aut, numquam ipsa voluptatibus maxime, quam voluptas? Fugiat voluptates ullam veniam aliquam?</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="movie.js"></script>
+</html>

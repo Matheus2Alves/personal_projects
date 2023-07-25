@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;  
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #17162E;
+    color: white;
+    height: 100%;    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 1.4em;
+    padding: 15px;
+    
+}
+
+.search-container {
+    width: 450px;
+    background-color: rgba(128, 128, 128, 0.374);
+}
+#movieSearch {
+    width: 400px;
+    height: 54px;   
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    outline: none;   
+}
+
+#movieSearch::placeholder {
+    color:  #8A8A8A;
+    padding-left: 10px;
+}
+
+#search-icon {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.checkbox-container {
+    margin: 15px 0px;
+}
+
+#favMovies {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 7px 0px 0px 0px;
+    padding: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#favMovies:checked {
+    background-color: rgba(128, 128, 128, 0.854);
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: 170px 200px 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "poster info desc"
+    "poster info desc";
+    width: 830px;
+    height: 200px;
+    background-color:  #1D1C3B;
+    border-radius: 8px;
+    box-shadow: 10px 12px 100px 4px rgba(0, 0, 0, 0.549);
+
+}
+
+.moviePoster {
+    grid-area: poster;
+    align-self: center;
+    height: 155px;
+}
+
+.infoMovie { 
+    grid-area: info;    
+    justify-self: center;
+    align-self: center; 
+}
+
+.infoMovie > p {
+    width: min-content;
+    display: inline-block;
+    padding: 10px 4px;
+}
+
+.infostats {
+    display: flex;
+    margin-top: 10px;
+    width: 200px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.iconStats {
+    width: 20px;
+    height: 20px;
+}
+.desc {
+    grid-area: desc;
+    align-self: center;
+    font-size: 0.9em;
+    width: 400px;
+    justify-self: flex-end;
+    color: #ACACAC;
+}
