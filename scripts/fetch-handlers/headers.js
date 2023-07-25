@@ -83,7 +83,7 @@ getData(bla)*/
 
 myData();*/
 
-const accessToken = ''
+const accessToken = 'USER TOKEN'
 
 async function getData() {
     try{
