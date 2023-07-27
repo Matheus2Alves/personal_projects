@@ -92,6 +92,7 @@ h1 {
     "poster info desc";
     width: 830px;
     height: 200px;
+    margin: 25px;
     background-color:  #1D1C3B;
     border-radius: 8px;
     box-shadow: 10px 12px 100px 4px rgba(0, 0, 0, 0.549);
@@ -102,6 +103,13 @@ h1 {
     grid-area: poster;
     align-self: center;
     height: 155px;
+}
+
+.imgMoviePoster {
+    width: 140px;
+    height: 140px;
+    border-radius: 5%;
+    margin-left: 15px;
 }
 
 .infoMovie { 
