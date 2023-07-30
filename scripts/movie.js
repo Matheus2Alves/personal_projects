@@ -13,10 +13,10 @@ window.onload = async function() {
 }
 
 const displayMovies = (movie) => {
-    const {title, poster_path, voto_average, release_date, overiew } = movie
+    const {title, poster_path, vote_average, release_date, overview } = movie
     const isFavorited = false //solves later
 
-    const year = new Date(release_date).getFullyear()
+    const year = new Date(release_date).getFullYear()
     const image = `https://image.tmdb.org/t/p/w500${poster_path}`
 
     const movieContainer = document.querySelector('section.movies-container')
@@ -43,7 +43,7 @@ const displayMovies = (movie) => {
     const movieStats = document.createElement('div')
     movieStats.classList.add('infostats')
     const rating = document.createElement('p')
-    const sRating = voto_average
+    const sRating = vote_average
     const star = document.createElement('img')
     star.src = '../imagens/star.svg'
     star.alt = 'star'
@@ -65,7 +65,7 @@ const displayMovies = (movie) => {
     movieDesc.classList.add('desc')
     const descMovie = document.createElement('p')
     const description = movie.description
-    descMovie.textContent = overiew
+    descMovie.textContent = overview
     movieDesc.appendChild(descMovie)
     movieBox.appendChild(movieDesc) 
 }
