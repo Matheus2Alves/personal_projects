@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    margin: 120px 0 100px 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.media {
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 800px;
+    height: 500px;
+}
+
+.jhnimg {
+    width: 800px;
+    height: 500px;
+}
+
+.seed {
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.seedh2 {
+    padding: 20px 0px 10px 13px ;
+    font-size: 1.8em;
+}
+
+.seedprov {
+    padding: 13px;
+    line-height: 1.3em;
+}
+
+button {
+    margin-left: 290px;
+    padding: 10px;
+    border-radius: 15px;
+}
