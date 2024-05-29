@@ -18,7 +18,7 @@ header {
     background-color: gray;
 }
 
-nav {
+.navbar {
     width: 700px;
     display: flex;
     flex-direction: row;
@@ -27,19 +27,24 @@ nav {
     align-items: center;
 }
 
-ul {
+.navlist {
     display: flex;
+    list-style-type: none ;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
 
-li {
+.navli {
     display: flex;
     justify-content: center;
     align-items: baseline;
     padding: 20px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 footer {
