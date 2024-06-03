@@ -9,10 +9,12 @@
 </head>
 <body>
     <header>
-        <div class="divTitle">
+        <button id="black">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button>
+        <div class="divTitle" class="DarkModetext">
             <h1 id="title">A ética dos Homens</h1>
         </div>
-        <nav class="navbar">
+        <nav class="navbar"  class="DarkModetext">
             <ul class="navlist">
                 <li class="navli"><a href="index.html">Home</a></li>
                 <li class="navli"><a href="kant.html">Kant</a></li>
@@ -23,10 +25,10 @@
         </nav>
     </header>
     <main>
-        <section class="media">
+        <section class="media" class="DarkModetext">
             <img  class="jhnimg" src="../img/johnStatue.jpg" alt="estátua de John Stuar Mill">
         </section>
-        <section class="seed">
+        <section class="seed" class="DarkModetext">
             <h2 class="seedh2">Qual ética é a correta?</h2>
             <p class="seedprov">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 Architecto nisi porro reprehenderit alias assumenda et debitis 
@@ -35,8 +37,17 @@
             <button><a href="kant.html">Saiba Mais</a></button>
         </section>
     </main>
-    <footer>
+    <footer class="DarkModetext">
         <p class="fttp">Matheus Alves e Tainá Tokumoto</p>
     </footer>
+    <script>
+        document.getElementById('black').addEventListener('click', function() {
+            window.alert("bla")
+           // let elements = document.querySelectorAll(".DarkModetext");
+            //elements.forEach(element => {
+            //elements.classList.add(".dark-mode");
+        //});;
+        });
+    </script>
 </body>
 </html>
