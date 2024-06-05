@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="../style/home.css">
 </head>
 <body>
-    <header>
-        <button id="black">Darkmode</button>
-        <button onclick="lightMode()">LightMode</button>
-        <div class="divTitle" class="DarkModetext">
+    <header class="darkk">
+        <div class="darkmode">
+            <button class="btn"></button> <p>Escuro/Claro</p>
+        </div>
+        <div class="divTitle" >
             <h1 id="title">A ética dos Homens</h1>
         </div>
-        <nav class="navbar"  class="DarkModetext">
+        <nav class="navbar">
             <ul class="navlist">
-                <li class="navli"><a href="index.html">Home</a></li>
-                <li class="navli"><a href="kant.html">Kant</a></li>
-                <li class="navli"><a href="john.html">John Stuart</a></li>
-                <li class="navli"><a href="niet.html">Nietzsche</a></li>
-                <li class="navli"><a href="contact.html">Contato</a></li>
+                <li class="navli"><a href="index.html" class="white">Home</a></li>
+                <li class="navli"><a href="kant.html" class="white">Kant</a></li>
+                <li class="navli"><a href="john.html" class="white">John Stuart</a></li>
+                <li class="navli"><a href="niet.html" class="white">Nietzsche</a></li>
+                <li class="navli"><a href="contact.html" class="white">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="media" class="DarkModetext">
+        <section class="media">
             <img  class="jhnimg" src="../img/johnStatue.jpg" alt="estátua de John Stuar Mill">
         </section>
-        <section class="seed" class="DarkModetext">
+        <section class="seed darkk">
             <h2 class="seedh2">Qual ética é a correta?</h2>
             <p class="seedprov">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 Architecto nisi porro reprehenderit alias assumenda et debitis 
@@ -37,16 +38,20 @@
             <button><a href="kant.html">Saiba Mais</a></button>
         </section>
     </main>
-    <footer class="DarkModetext">
+    <footer class="darkk">
         <p class="fttp">Matheus Alves e Tainá Tokumoto</p>
     </footer>
     <script>
-        document.getElementById('black').addEventListener('click', function() {
-            window.alert("bla")
-           // let elements = document.querySelectorAll(".DarkModetext");
-            //elements.forEach(element => {
-            //elements.classList.add(".dark-mode");
-        //});;
+        document.querySelector('.btn ').addEventListener('click', function() {
+            let  hedd = document.querySelectorAll('.darkk')
+            let gray = document.querySelectorAll('.grayy')
+            let hardgray = document.querySelectorAll('.hardgray')
+            let pp = document.querySelectorAll('.white')
+            this.classList.toggle('active');
+            hedd.forEach(x => x.classList.toggle('active'));
+            gray.forEach(x => x.classList.toggle('active'));
+            hardgray.forEach(x => x.classList.toggle('active'));
+            pp.forEach(x => x.classList.toggle('active'));
         });
     </script>
 </body>
