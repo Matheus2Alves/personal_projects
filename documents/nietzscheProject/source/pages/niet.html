@@ -6,9 +6,10 @@
     <title>Nietzsche</title>
     <link rel="stylesheet" href="../style/kant.css">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/darkwhite.css">
 </head>
 <body>
-    <header>
+    <header class="darkk">
         <div class="darkmode">
             <button class="btn"></button> <p>Escuro/Claro</p>
         </div>
@@ -26,7 +27,7 @@
         </nav>
     </header>
     <main class="container">
-        <div class="container-sidebar">
+        <div class="container-sidebar hardgray">
             <nav class="sidebar">
                 <ul>
                     <li><a href="">teste</a></li>
@@ -36,14 +37,14 @@
                 </ul>
             </nav>
         </div>
-        <section class="containerContent">
-            <header class="headercont">
+        <section class="containerContent darkk">
+            <header class="headercont grayy">
                 <h2>EITCA DOS NAO SEI OQ HAHA</h2>
-                <button><span><img src="" alt="símbolo de traduzir"></span><p>Traduzir</p></button>
+                <!--<button><span><img src="" alt="símbolo de traduzir"></span><p>Traduzir</p></button>-->
             </header>
             <p class="textcnt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio. Et, placeat? Ad architecto ullam cumque repudiandae non hic quod fugit a sapiente quasi mollitia distinctio necessitatibus, explicabo suscipit quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora expedita esse officia praesentium aspernatur et eos ullam? Delectus, suscipit sit veniam omnis architecto magni ex odit, aspernatur eaque exercitationem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum in reiciendis reprehenderit dolorum pariatur quasi, vero illo suscipit, vel voluptate ipsum facere atque corporis maiores consequatur impedit porro nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In maiores voluptatibus incidunt minus doloremque molestiae quas, unde soluta consectetur, dolor animi dicta a vitae aliquam quidem repellat atque exercitationem nam.</p>
         </section>
-        <aside class="resume">
+        <aside class="resume hardgray">
             <h2>Nome desse maluco ai</h2>
             <figure>
                 <img src="../img/nietzscheProfile.jpg" alt="">
@@ -54,5 +55,19 @@
     <footer>
         <p class="fttp">Matheus Alves e Tainá Tokumoto</p>
     </footer>
+    <script >
+        document.querySelector('.btn ').addEventListener('click', function() {
+            let  hedd = document.querySelectorAll('.darkk')
+            let gray = document.querySelectorAll('.grayy')
+            let hardgray = document.querySelectorAll('.hardgray')
+            let pp = document.querySelectorAll('.white')
+            this.classList.toggle('active');
+            hedd.forEach(x => x.classList.toggle('active'));
+            gray.forEach(x => x.classList.toggle('active'));
+            hardgray.forEach(x => x.classList.toggle('active'));
+            pp.forEach(x => x.classList.toggle('active'));
+        });
+    </script>
+  
 </body>
 </html>

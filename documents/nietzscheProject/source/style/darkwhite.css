@@ -1,0 +1,47 @@
+
+@charset "UTF-8";
+
+.darkk.active {
+    background-color: black;
+    color: white;
+
+}
+
+.grayy.active{
+    background-color: gray;
+    color: white;
+}
+
+.hardgray.active {
+    background-color: rgb(48, 46, 46);
+}
+
+.white.active {
+    color: white;
+}
+
+.darkmode > p {
+    text-align: end;
+    font-size: 0.6em;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%); 
+} 
