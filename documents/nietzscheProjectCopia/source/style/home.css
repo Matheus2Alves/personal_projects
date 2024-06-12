@@ -25,6 +25,14 @@ header {
     margin-bottom: 10px;
 }
 
+#menu-dropdown{
+    display: none;
+}
+
+#burguer {
+    display: none;
+}
+
 .navbar {
     margin-top: 15px;
 }
@@ -49,6 +57,9 @@ header {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .media {
@@ -58,10 +69,30 @@ main {
 
 .seed {
     background-color: #2d2a2a;
+    width: 700px;
+    height: 330px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(148, 147, 147, 0.1);
+}
+
+.saiba {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.saiba a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.saiba:hover {
+    background-color: #751605;
 }
 
 .seedh2 {
@@ -76,16 +107,6 @@ main {
     color: #c4c3c3;
 }
 
-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
 .dark-mode {
     background-color: black;
     color: white;
@@ -94,15 +115,6 @@ button {
 .light-mode {
     background-color: white;
     color: black;
-}
-
-.button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-button:hover {
-    background-color: #751605;
 }
 
 footer {
@@ -117,4 +129,10 @@ footer {
 
 .fttp {
     margin: 0;
+}
+
+img{
+    width: 70%;
+    border: 7px solid black;
+    border-radius: 20px;
 }

@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="../style/kant.css">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/darkwhite.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <header>
+    <header class="darkk">
         <div class="darkmode">
             <button class="btn"></button> <p>Escuro/Claro</p>
         </div>
@@ -24,10 +26,23 @@
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
+        <span class="material-symbols-outlined " id="burguer">menu</span>  <!--navbar para telas menores-->     
+        <nav id="menu-dropdown">
+            <ul>              
+                <li class="navli"><a href="index.html">Home</a></li>
+                <li class="navli"><a href="kant.html">Kant</a></li>
+                <li class="navli"><a href="john.html">John Stuart</a></li>
+                <li class="navli"><a href="niet.html">Nietzsche</a></li>
+                <li class="navli"><a href="contact.html">Contato</a></li>     
+            </ul>
+        </nav>
     </header>
-    <!--CONTEÚDO-->
+    <main class="containerContent darkk">
+        <h3>Email para contato: blindfrog@gmail.com</h3>
+    </main>
     <footer>
         <p class="fttp">Matheus Alves e Tainá Tokumoto</p>
     </footer>
+    <script src="../src/main.js"></script>
 </body>
 </html>

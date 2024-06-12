@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kant</title>
-    <link rel="stylesheet" href="../style/kant.css">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/darkwhite.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -17,7 +17,7 @@
         <div class="divTitle">
             <h1 id="title">A ética dos Homens</h1>
         </div>
-        <nav class="navbar">
+        <nav class="navbar"> <!--navbar para telas maiores-->  
             <ul class="navlist">
                 <li class="navli"><a href="index.html">Home</a></li>
                 <li class="navli"><a href="kant.html">Kant</a></li>
@@ -26,7 +26,7 @@
                 <li class="navli"><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
-        <span class="material-symbols-outlined " id="burguer">menu</span>       
+        <span class="material-symbols-outlined " id="burguer">menu</span>  <!--navbar para telas menores-->     
         <nav id="menu-dropdown">
             <ul>              
                 <li class="navli"><a href="index.html">Home</a></li>
@@ -51,14 +51,13 @@
         <section class="containerContent darkk">
             <header class="headercont hardgray">
                 <h2>EITCA DOS NAO SEI OQ HAHA</h2>
-                <button><span><img src="" alt="símbolo de traduzir"></span><p>Traduzir</p></button>
             </header>
             <p class="textcnt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio. Et, placeat? Ad architecto ullam cumque repudiandae non hic quod fugit a sapiente quasi mollitia distinctio necessitatibus, explicabo suscipit quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora expedita esse officia praesentium aspernatur et eos ullam? Delectus, suscipit sit veniam omnis architecto magni ex odit, aspernatur eaque exercitationem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum in reiciendis reprehenderit dolorum pariatur quasi, vero illo suscipit, vel voluptate ipsum facere atque corporis maiores consequatur impedit porro nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In maiores voluptatibus incidunt minus doloremque molestiae quas, unde soluta consectetur, dolor animi dicta a vitae aliquam quidem repellat atque exercitationem nam.</p>
         </section>
         <aside class="resume hardgray">
             <h2 class="white">Nome desse maluco ai</h2>
             <figure>
-                <img src="../img/kantProfile.jpg" alt="">
+                <img id="kantimage" src="../img/kantProfile.jpg" alt="kant">
             </figure>
             <p class="white">pequenito resumito sobre tudito</p>
         </aside>
@@ -66,30 +65,6 @@
     <footer>
         <p class="fttp">Matheus Alves e Tainá Tokumoto</p>
     </footer>
-    <script>
-        document.querySelector('.btn ').addEventListener('click', function() {
-            let  hedd = document.querySelectorAll('.darkk')
-            let gray = document.querySelectorAll('.grayy')
-            let hardgray = document.querySelectorAll('.hardgray')
-            let pp = document.querySelectorAll('.white')
-            this.classList.toggle('active');
-            hedd.forEach(x => x.classList.toggle('active'));
-            gray.forEach(x => x.classList.toggle('active'));
-            hardgray.forEach(x => x.classList.toggle('active'));
-            pp.forEach(x => x.classList.toggle('active'));
-        });
-
-        document.getElementById('burguer').addEventListener('click', function() {
-            event.stopPropagation(); 
-            document.querySelector('header').classList.toggle('menu-open');
-            });
-        document.addEventListener('click', function(event) {
-        var menu = document.querySelector('header');
-        var target = event.target;
-        if (!menu.contains(target)) { // Verifica se o clique ocorreu fora do menu
-            menu.classList.remove('menu-open');
-        }
-    });
-    </script>
+    <script src="../src/main.js"></script>
 </body>
 </html>
