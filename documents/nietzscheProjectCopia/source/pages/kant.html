@@ -6,6 +6,8 @@
     <title>Kant</title>
     <link rel="stylesheet" href="../style/kant.css">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header class="darkk">
@@ -22,6 +24,16 @@
                 <li class="navli"><a href="john.html">John Stuart</a></li>
                 <li class="navli"><a href="niet.html">Nietzsche</a></li>
                 <li class="navli"><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <span class="material-symbols-outlined " id="burguer">menu</span>       
+        <nav id="menu-dropdown">
+            <ul>              
+                <li class="navli"><a href="index.html">Home</a></li>
+                <li class="navli"><a href="kant.html">Kant</a></li>
+                <li class="navli"><a href="john.html">John Stuart</a></li>
+                <li class="navli"><a href="niet.html">Nietzsche</a></li>
+                <li class="navli"><a href="contact.html">Contato</a></li>     
             </ul>
         </nav>
     </header>
@@ -66,6 +78,18 @@
             hardgray.forEach(x => x.classList.toggle('active'));
             pp.forEach(x => x.classList.toggle('active'));
         });
+
+        document.getElementById('burguer').addEventListener('click', function() {
+            event.stopPropagation(); 
+            document.querySelector('header').classList.toggle('menu-open');
+            });
+        document.addEventListener('click', function(event) {
+        var menu = document.querySelector('header');
+        var target = event.target;
+        if (!menu.contains(target)) { // Verifica se o clique ocorreu fora do menu
+            menu.classList.remove('menu-open');
+        }
+    });
     </script>
 </body>
 </html>
