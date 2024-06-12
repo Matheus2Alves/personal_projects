@@ -196,6 +196,7 @@ img {
 @media (max-width:1000px ) { 
     .container {
         flex-direction: column;
+        background-color: yellow;
         gap: 20px;
     }
 
