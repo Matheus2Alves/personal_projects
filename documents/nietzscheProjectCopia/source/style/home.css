@@ -1,0 +1,120 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #929191;
+    color: #767676;
+}
+
+header {
+    background-color: #2d2a2a;
+    color: #c4c3c3;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    margin-top: 15px;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navlist li a:hover {
+    color: #ff6347;
+}
+
+main {
+    padding: 20px;
+}
+
+.media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.seed {
+    background-color: #2d2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(148, 147, 147, 0.1);
+}
+
+.seedh2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #c4c3c3;
+}
+
+.seedprov {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #c4c3c3;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #751605;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.fttp {
+    margin: 0;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kant</title>
+    <link rel="stylesheet" href="../style/kant.css">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <header class="darkk">
+        <div class="darkmode">
+            <button class="btn"></button> <p>Escuro/Claro</p>
+        </div>
+        <div class="divTitle">
+            <h1 id="title">A ética dos Homens</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="navlist">
+                <li class="navli"><a href="index.html">Home</a></li>
+                <li class="navli"><a href="kant.html">Kant</a></li>
+                <li class="navli"><a href="john.html">John Stuart</a></li>
+                <li class="navli"><a href="niet.html">Nietzsche</a></li>
+                <li class="navli"><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="container-sidebar hardgray">
+            <nav class="sidebar">
+                <ul class="white">
+                    <li><a href="">teste</a></li>
+                    <li><a href=""></a>teste</li>
+                    <li><a href=""></a>teste<li>
+                    <li><a href=""></a>teste</li>
+                </ul>
+            </nav>
+        </div>
+        <section class="containerContent darkk">
+            <header class="headercont hardgray">
+                <h2>EITCA DOS NAO SEI OQ HAHA</h2>
+                <button><span><img src="" alt="símbolo de traduzir"></span><p>Traduzir</p></button>
+            </header>
+            <p class="textcnt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio. Et, placeat? Ad architecto ullam cumque repudiandae non hic quod fugit a sapiente quasi mollitia distinctio necessitatibus, explicabo suscipit quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora expedita esse officia praesentium aspernatur et eos ullam? Delectus, suscipit sit veniam omnis architecto magni ex odit, aspernatur eaque exercitationem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum in reiciendis reprehenderit dolorum pariatur quasi, vero illo suscipit, vel voluptate ipsum facere atque corporis maiores consequatur impedit porro nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In maiores voluptatibus incidunt minus doloremque molestiae quas, unde soluta consectetur, dolor animi dicta a vitae aliquam quidem repellat atque exercitationem nam.</p>
+        </section>
+        <aside class="resume hardgray">
+            <h2 class="white">Nome desse maluco ai</h2>
+            <figure>
+                <img src="../img/kantProfile.jpg" alt="">
+            </figure>
+            <p class="white">pequenito resumito sobre tudito</p>
+        </aside>
+    </main>
+    <footer>
+        <p class="fttp">Matheus Alves e Tainá Tokumoto</p>
+    </footer>
+    <script>
+        document.querySelector('.btn ').addEventListener('click', function() {
+            let  hedd = document.querySelectorAll('.darkk')
+            let gray = document.querySelectorAll('.grayy')
+            let hardgray = document.querySelectorAll('.hardgray')
+            let pp = document.querySelectorAll('.white')
+            this.classList.toggle('active');
+            hedd.forEach(x => x.classList.toggle('active'));
+            gray.forEach(x => x.classList.toggle('active'));
+            hardgray.forEach(x => x.classList.toggle('active'));
+            pp.forEach(x => x.classList.toggle('active'));
+        });
+    </script>
+</body>
+</html>
