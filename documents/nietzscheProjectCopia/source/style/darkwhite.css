@@ -24,6 +24,7 @@
 .darkmode > p {
     font-size: 0.6em;
     text-align: center;
+    color: white;
 }
 
 .btn {
