@@ -14,10 +14,33 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-areas: 
+    "log title ."
+    "buton nav .";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100px 1fr 100px;
     background-color: #0e0116;
     color: #c4c3c3;
     padding: 20px 0;
     text-align: center;
+}
+
+header > #logo{
+    grid-area: log;
+}
+
+header > .divTitle {
+    grid-area: title;
+}
+
+header > .divBtn {
+    grid-area: buton;
+    margin: 10px;
+}
+
+header > .navbar{
+    grid-area: nav;
 }
 
 #title {

@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <header class="darkk">
-        <div class="darkmode">
+    <header class="topheader darkk">
+        <img src="../img/pena.png" alt="logo" id="logo">
+        <div class="divBtn darkmode">
             <button class="btn"></button> <p>Escuro/Claro</p>
         </div>
         <div class="divTitle">
@@ -37,8 +38,27 @@
             </ul>
         </nav>
     </header>
-    <main class="containerContent darkk">
-        <h3>Email para contato: blindfrog@gmail.com</h3>
+    <main class="containerform darkk">
+        <div class="form-container">
+            <h3>Deixe seu feedback sobre o site!</h3>
+            <form id="contactForm" action="process_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <p class="fttp">Matheus Alves e Tainá Tokumoto</p>
